@@ -1,3 +1,6 @@
-body {
-	background-color: #EAEAEA;
-}
+.test .inner {
+  color: white;
+  font-size: 15px; }
+
+header {
+  color: black; }
