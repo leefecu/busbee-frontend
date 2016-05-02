@@ -1,6 +1,10 @@
-.test .inner {
-  color: white;
-  font-size: 15px; }
+footer {
+  color: black; }
 
 header {
   color: black; }
+
+.search-result ul {
+  list-style: none; }
+  .search-result ul li {
+    margin: 10px 0; }
