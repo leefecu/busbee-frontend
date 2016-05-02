@@ -1,6 +1,8 @@
 node_modules
+build/main.css
 build/main.js
 build/specs.js
 build/vendors.js
+build/images
 TEST-App.xml
 npm-debug.log

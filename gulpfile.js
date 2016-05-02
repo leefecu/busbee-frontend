@@ -161,6 +161,24 @@ var sassTask = function (options) {
     }
 }
 
+var imageTask = function (options) {
+    if (options.development) {
+        var run = function() {
+            var start = new Date();
+            console.log('Copying image files');
+            gulp.src(options.src)
+                .pipe(gulp.dest(options.dest))
+                .pipe(notify(function() {
+                    console.log('image copying in ' + (Date.now() - start) + 'ms');
+                }));
+        }
+        run();
+    } else {
+        gulp.src('./images/**/*.*')
+            .pipe(gulp.dest(options.dest));
+    }
+}
+
 // Starts our development workflow
 gulp.task('default', function () {
     livereload.listen();
@@ -181,6 +199,12 @@ gulp.task('default', function () {
         development: true,
         src: './styles/sass/**/*.scss',
         dest: './build'
+    })
+
+    imageTask({
+        development: true,
+        src: './images/**/*.*',
+        dest: './build/images'
     })
 
     connect.server({
