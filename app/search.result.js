@@ -3,12 +3,38 @@ var React = require('react');
 var SearchResult = React.createClass({
     render: function() {
         return (
-            <div className="search-result">
-            	<ul>
-            		<li>result 1</li>
-            		<li>result 2</li>
-            		<li>result 3</li>
-            	</ul>
+            <div>             
+                <table className = 'search-result'>
+                    <thead>
+                        <tr>
+                            <th>Num</th>
+                            <th>Description</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><a href="#">
+                            <td>8874</td>
+                            <td>Takapuna</td>
+                            <td><img src="../images/content/stop_black.png" /></td>
+                        </a></tr>
+                        <tr>
+                            <td>887</td>
+                            <td>Britomart</td>
+                            <td><img src="../images/content/bus_black.png" /></td>
+                        </tr>
+                        <tr>
+                            <td>8874</td>
+                            <td>Takapuna</td>
+                            <td><img src="../images/content/stop_black.png" /></td>
+                        </tr>
+                        <tr>
+                            <td>887</td>
+                            <td>Britomart</td>
+                            <td><img src="../images/content/bus_black.png" /></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         );
     }
