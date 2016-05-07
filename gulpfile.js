@@ -179,6 +179,24 @@ var imageTask = function (options) {
     }
 }
 
+var fontTask = function (options) {
+    if (options.development) {
+        var run = function() {
+            var start = new Date();
+            console.log('Copying font files');
+            gulp.src(options.src)
+                .pipe(gulp.dest(options.dest))
+                .pipe(notify(function() {
+                    console.log('image copying in ' + (Date.now() - start) + 'ms');
+                }));
+        }
+        run();
+    } else {
+        gulp.src('./styles/sass/font/**/*.*')
+            .pipe(gulp.dest(options.dest));
+    }
+}
+
 // Starts our development workflow
 gulp.task('default', function () {
     livereload.listen();
@@ -205,6 +223,12 @@ gulp.task('default', function () {
         development: true,
         src: './images/**/*.*',
         dest: './build/images'
+    })
+
+    imageTask({
+        development: true,
+        src: './styles/sass/font/**/*.*',
+        dest: './build/font'
     })
 
     connect.server({
