@@ -8,7 +8,7 @@ var App = React.createClass({
         return (
             <div className="busbee">
                 <Header />
-                <img src="/images/kakao.jpg" />
+                <img src="../images/kakao.jpg" />
                 <SearchResult />
                 <Footer />
             </div>
