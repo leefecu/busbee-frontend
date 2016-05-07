@@ -1,4 +1,7 @@
 @import "import/variables.scss";
+@import "import/fontface";
+
+@include fontFace('Futura Md Bt', 'font/FutuBd');
 
 header {
     background-color:#f88d01;
@@ -46,4 +49,6 @@ header {
 
     }
 
+	font-family: 'Futura Md Bt';	
+    color: $black;    
 }
