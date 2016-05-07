@@ -1,5 +1,9 @@
 @import "import/variables.scss";
+@import "import/fontface";
+
+@include fontFace('Futura Md Bt', 'font/FutuBd');
 
 header {
-    color: $black;
+	font-family: 'Futura Md Bt';	
+    color: $black;    
 }
