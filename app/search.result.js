@@ -4,11 +4,39 @@ var SearchResult = React.createClass({
     render: function() {
         return (
             <div className="search-result">
-            	<ul>
-            		<li>result 1</li>
-            		<li>result 2</li>
-            		<li>result 3</li>
-            	</ul>
+            	<table>
+                    <thead>
+                        <tr>
+                            <th> Num </th>
+                            <th> Discription </th>
+                            <th>  </th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr><a href="#">
+                            <td>8874</td>
+                            <td>Takapuna</td>
+                            <td><img src=" " /></td>
+                        </a></tr>
+                        <tr>
+                            <td>887</td>
+                            <td>Britomart</td>
+                            <td><img src=" " /></td>
+                        </tr>
+                        <tr>
+                            <td>8874</td>
+                            <td>Takapuna</td>
+                            <td><img src="" /></td>
+                        </tr>
+                        <tr>
+                            <td>887</td>
+                            <td>Britomart</td>
+                            <td><img src=" " /></td>
+                        </tr>
+                    </tbody>
+                </table>
+
             </div>
         );
     }
