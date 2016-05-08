@@ -16,9 +16,9 @@ $font_ss: 2.5vmin;
 }
 @font-face {
     font-family: FutuMd;
-    src: url('../styles/sass/font/FutuMd.ttf');
+    src: url('/font/FutuMd.ttf');
     font-family: FutuBd;
-    src: url('../styles/sass/font/FutuBd.ttf');
+    src: url('/font/FutuBd.ttf');
 }
 .clear{
 	clear:both;
@@ -121,7 +121,7 @@ body{
 		box-shadow:inset 5px 5px 5px #9d9d9d; /* CSS3 */
 
 		float:left;
-		margin-top:2px;
+		margin-top:4px;
 	}
 	img{
 		float:left;
