@@ -2,17 +2,18 @@ footer {
 	max-width: 800px;
 	max-height: 140px;
 	background-color: #454444;
+	overflow: hidden;
 
 		ul {
 
 			li {
 				list-style-type:none;
 				display: inline-block;
-				margin: 0 7%;
+				margin: 0 4%;
 			}
 
 				img {
-					padding: 5px 0;
+
 					width:35px;
 					height:35px;
 

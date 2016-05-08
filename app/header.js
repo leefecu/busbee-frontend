@@ -4,7 +4,7 @@ var Header = React.createClass({
     render: function() {
         return (
             <header>
-                I'm header
+                Im header
             </header>
         );
     }
